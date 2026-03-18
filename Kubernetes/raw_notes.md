@@ -2,7 +2,7 @@
 
 ### Get a resource as a yaml file
 ```kubectl get pods -n <namespace> <resource name> -o yaml```  
-If you want to write it to a file to review it in an IDE add ti output indicator:  
+If you want to write it to a file to review it in an IDE add the output indicator:  
 ```kubectl get pods -n <namespace> <resource name> -o yaml > review.yaml```  
 This overwrites review.yaml
 
