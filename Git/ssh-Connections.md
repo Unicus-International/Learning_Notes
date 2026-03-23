@@ -9,6 +9,8 @@ git config core.sshCommand "ssh -i ~/.ssh/id_ed25519"
 Add the ```--global``` flag to set for every repository. This is inadvisable if you use both github and gitlab on the same computer with different ssh keys.  
 Be advised that this will only set the ssh option for git actions. Running ```ssh -T git@github.com``` to verify your connection will not connect properly.
 
+This works in windows as well. The ~ sign stands for the Users folder in windows in git shell, so you can omit the **C:\users\<user>**. I recommend to store the key file in **C:\users\<user>\\.ssh** to simplify this.
+
 ### Per host setting
 Git will grab the correct correct ssh config if the config file is set. This can be set per host, and is a per user on the computer thing. Remember to restrict the folder and files if you share a computer with someone.  
 ```
