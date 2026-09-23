@@ -11,6 +11,11 @@ Be advised that this will only set the ssh option for git actions. Running ```ss
 
 This works in windows as well. The ~ sign stands for the Users folder in windows in git shell, so you can omit the **C:\users\<user>**. I recommend to store the key file in **C:\users\<user>\\.ssh** to simplify this.
 
+It is possible to tell git in wsl to use SSH and keys from windows.
+´´´
+git config --global core.sshCommand "/mnt/c/Windows/System32/OpenSSH/ssh.exe"
+´´´
+
 ### Per host setting
 Git will grab the correct correct ssh config if the config file is set. This can be set per host, and is a per user on the computer thing. Remember to restrict the folder and files if you share a computer with someone.  
 ```
