@@ -16,3 +16,8 @@ This overwrites review.yaml
 
 ### Set kubectl environment to azure cluster
 ```az aks get-credentials -g <resource-group> -n <name-of-resource> --overwrite-existing --admin```  
+
+### Create namespace
+```kubectl create namespace <my-namespace>```
+
+
